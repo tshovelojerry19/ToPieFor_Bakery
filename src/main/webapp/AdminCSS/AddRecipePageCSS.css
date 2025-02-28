@@ -1,0 +1,77 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+
+
+}
+.in{
+    width: 25vw;
+    padding: 12px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+}
+
+.form form{
+    margin-right: 10%;
+
+}
+#popupForm{
+
+    height: 63vh;
+}
+.form select{
+    width: 100%;
+    padding: 12px 30px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+}
+#ingredientList{
+    background: #ffffff;
+    height: 25vh;
+    width: 25vw;
+    overflow: auto;
+}
+
+.saveButton{
+    text-align: center;
+    border-radius: 4px;
+    background:#242e42;
+    border: none;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 10px;
+    width: 10vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-top: 5%;
+
+
+}
+#sub{
+    margin-left: 30%;
+    margin-top :5%;
+}
+.remove-button {
+    color: red;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/*close button*/
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}

@@ -1,0 +1,46 @@
+.info{
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 6%;
+    border: 1px solid #ccc;
+}
+.but{
+
+    margin-top: 15px;
+    position: absolute;
+    top: 65%;
+
+    left: 40%;
+    right: 0;
+}
+.info .ta{
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 6%;
+
+}
+.content{
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+.content .input-field {
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid darkblue;
+}
+
+/*close button*/
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}

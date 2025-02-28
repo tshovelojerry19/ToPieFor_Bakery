@@ -1,0 +1,103 @@
+/*body style*/
+body {
+    background: blanchedalmond;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: black;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+.nav{
+    color: white;
+    background: rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    overflow: hidden;
+    width: 100%;
+}
+.nav ul{
+
+
+    list-style: none;
+    margin-top: 2%;
+    margin-right: 13px;
+
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+ #popup {
+                display: none;
+                position: fixed;
+                top: 0;
+                left:0%;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.8);
+
+                height: 100vh;
+                width:  100vw;
+                z-index: 999;
+
+            }
+            .con{
+                position: fixed;
+                top: 35%;
+                left: 35%;
+                background: white;
+                width: 30vw;
+                height: 15vw;
+                border-radius: 20px;
+            }
+            .icon img{
+                padding-top: 10%;
+                margin: auto;
+                width: 10vw;
+                height: 25vh;
+                display: block;
+
+            }
+.nav li{
+
+    display: inline;
+    margin-right: 30px;
+    padding: 15px;
+}

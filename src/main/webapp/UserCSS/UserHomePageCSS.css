@@ -1,0 +1,348 @@
+/*body style*/
+body {
+    background-image: url('https://th.bing.com/th/id/R.59127c7498145614c4311571f0f8d025?rik=VYbzYl4HNxsw2A&pid=ImgRaw&r=0');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    overflow: hidden;
+    width: 100%;
+}
+.nav ul{
+
+
+    list-style: none;
+    margin-right: 13px;
+
+    font-size: 1em;
+    font-weight: bold;
+
+
+}
+.nav li{
+    display: inline;
+    margin-right: 30px;
+    padding: 15px;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.pexels.com/photos/302552/pexels-photo-302552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.row img{
+    height: 30vh;
+}
+a{
+    color: blanchedalmond;
+    margin-right: 25px;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    transition: ease-in;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*         Full-width input fields 
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            background: #f1f1f1;
+
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }*/
+
+/*        input[type=number] {
+            width: 5vw;
+            height: 15%;
+            padding: 5px;
+            margin: 5px 0 22px 0;
+            margin-right: 3%;
+            display: inline-block;
+            background: #f1f1f1;
+
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+
+
+         Add a background color when the inputs get focus 
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }*/
+
+/* Set a style for all buttons */
+buttonnn {
+    background-color: #373737;
+    color: white;
+    padding: 8px 20px;
+    /*           // margin: 8px 0;*/
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+/*set style for all button hover*/
+buttonnn:hover {
+    opacity:1;
+}
+
+
+/*         Extra styles for the cancel button 
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+         Float cancel and signup buttons and add an equal width 
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }*/
+
+/*         Extra styles for the signup button 
+        .signupbtn {
+            padding: 14px 20px;
+            background-color: #2E8B57;
+        }
+
+         Float signup buttons and add an equal width 
+        .signupbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }*/
+
+/*         Extra styles for the forgot button 
+        .forgotbtn {
+            padding: 14px 20px;
+            background-color: #0096FF;
+        }
+
+         Float forgot buttons and add an equal width 
+        .forgotbtn, .forgotbtn {
+            float: left;
+            width: 50%;
+        }*/
+
+/*         Extra styles for the cancel button 
+        .passwordbtn {
+            padding: 14px 20px;
+            background-color:  #B21807;
+        }
+
+         Float cancel and signup buttons and add an equal width 
+        .passwordbtn {
+            float: left;
+            width: 50%;
+        }*/
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/*avatar img*/
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/*span password*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+    color:#f44336;
+}
+
+
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #b5b8be;
+    padding-top: 50px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*Cart model*/
+.modalCart {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #b5b8be;
+    /*padding-top: 50px;*/
+}
+
+/* Modal Cart Content/Box */
+.modalCart-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/*         The Close Button (x) 
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+
+        close button hover and focus
+        .close:hover,
+        .close:focus {
+            color: #f44336;
+            cursor: pointer;
+        }*/
+
+/*         Clear floats 
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }*/
+
+/*         Add Zoom Animation 
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
+
+        @-webkit-keyframes animatezoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes animatezoom {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }*/
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+}
+
+/*         Change styles for cancel button and signup button on extra small screens 
+        @media screen and (max-width: 300px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }*/
+
+
+/*Cart css*/
+@media (min-width: 1025px) {
+    .h-custom {
+        height: 100vh !important;
+    }
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+.collapsible {
+    background-color: #F9F6EE;
+    color: #8F867C;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #6E848F;
+    text-align: left;
+    outline: none;
+    font-size: 12px;
+}
+
+.active, .collapsible:hover {
+    background-color: #373737;
+}
+
+.content {
+    padding: 10px 10px 10px 10px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+/*btn css for add to cart*/
+.btn{
+    color: #8F867C;
+    border: 2px solid #373737;
+}
+
+.btnHome{
+    color: #2798B0;
+    border: 2px solid #6AE3FC;
+}

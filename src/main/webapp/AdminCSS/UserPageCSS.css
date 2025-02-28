@@ -1,0 +1,21 @@
+.topnav {
+    overflow: visible;
+    background-color: #E8E8E8;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding-top:  40px;
+    padding-bottom:  40px;
+}
+.topnavMain {
+    overflow: visible;
+    background-color: #E8E8E8;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding-bottom: 40px;
+    padding-top:  40px;
+
+}

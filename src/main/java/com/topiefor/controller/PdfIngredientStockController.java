@@ -1,0 +1,67 @@
+package com.topiefor.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Font.FontFamily;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.topiefor.models.User;
+import javax.servlet.RequestDispatcher;
+
+@WebServlet("/PdfIngredientStockController")
+public class PdfIngredientStockController extends HttpServlet {
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Retrieve the order information from the request parameters
+        User user = (User) request.getSession().getAttribute("user");
+        if (user == null) {
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("User/LoginPage.jsp");
+            requestDispatcher.forward(request, response);
+        } else {
+            String orderInfo = request.getParameter("orderInfo");
+
+            // Split the order information into individual data elements
+            String[] orderData = orderInfo.split(",");
+
+            // Generate the PDF document
+            Document document = new Document();
+            try {
+                // Set the response headers for PDF download
+                response.setContentType("application/pdf");
+                response.setHeader("Content-Disposition", "attachment;filename=IngredientStock.pdf");
+
+                // Create a PDF writer
+                PdfWriter.getInstance(document, response.getOutputStream());
+
+                // Open the PDF document
+                document.open();
+
+                // Add paragraphs with the order information to the document
+                Font titleFont = new Font(FontFamily.HELVETICA, 18, Font.BOLD);
+                Paragraph title = new Paragraph("Stock for Ingredient is low", titleFont);
+                
+                
+                document.add(title);
+                document.add(new Paragraph(" "));
+                document.add(new Paragraph("Order ID: " + orderData[0]));
+                document.add(new Paragraph("Ingredient Name: " + orderData[1]));
+                document.add(new Paragraph("Status: " + orderData[2]));
+                document.add(new Paragraph("Quantity Left: " + orderData[3]));
+                document.add(new Paragraph("Unit Type: " + orderData[4]));
+
+                // Close the PDF document
+                document.close();
+            } catch (DocumentException e) {
+            }
+        }
+    }
+}

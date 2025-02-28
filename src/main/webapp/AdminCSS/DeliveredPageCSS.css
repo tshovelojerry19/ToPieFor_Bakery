@@ -1,0 +1,74 @@
+/*layout of the grid thats holding all the items*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    grid-column: span 1;
+}
+
+/* Adjust the styling as per your requirements */
+.card {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #E8E8E8;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+}
+
+.order-heading {
+    margin-right: 10px;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-detail {
+    flex-basis: 50%;
+}
+
+/*heading design*/
+
+.topnav {
+    overflow: visible;
+    background-color: #E8E8E8;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding-top:  40px;
+    padding-bottom:  40px;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 60px;
+    border: none;
+    font-size: 17px;
+    width: 90%;
+}
+.topnavMain {
+    overflow: visible;
+    background-color: #E8E8E8;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #ccc;
+    padding-bottom: 40px;
+    padding-top:  40px;
+
+}
